@@ -1,6 +1,8 @@
 #include "Shape.h"
 using namespace std;
 
+Shape::Shape() : color("red"){}
+
 Shape::Shape(string color) : color("red"){
 	set_color(color);
 }
