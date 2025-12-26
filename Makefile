@@ -1,3 +1,10 @@
+Drawing.o: Drawing.h Drawing.cpp Shape.h List.h ListLinked.h
+	g++ -c Drawing.cpp
+
+bin/testDrawing: testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
+	mkdir -p bin
+	g++ -o bin/testDrawing testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
+
 Square.o: Square.h Square.cpp Shape.h Point2D.h
 	g++ -c Square.cpp
 
