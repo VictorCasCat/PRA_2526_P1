@@ -42,7 +42,7 @@ bin/testPoint2D: testPoint2D.cpp Point2D.o
 
 bin/testListLinked: testListLinked.cpp ListLinked.h List.h
 	mkdir -p bin
-	g++ -o bin/testListLinked testListLinked.cpp ListLinked.hi
+	g++ -o bin/testListLinked testListLinked.cpp ListLinked.h
 
 bin/testNode: testNode.cpp Node.h
 	mkdir -p bin
